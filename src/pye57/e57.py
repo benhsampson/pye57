@@ -340,7 +340,7 @@ class E57:
 
         points_prototype = libe57.StructureNode(self.image_file)
 
-        is_scaled = False
+        is_scaled = True
         precision = libe57.E57_DOUBLE if is_scaled else libe57.E57_SINGLE
 
         center = (bb_max + bb_min) / 2
