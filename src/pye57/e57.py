@@ -101,7 +101,7 @@ class E57:
         self.root.set("versionMajor", libe57.IntegerNode(imf, libe57.E57_FORMAT_MAJOR))
         self.root.set("versionMinor", libe57.IntegerNode(imf, libe57.E57_FORMAT_MINOR))
         self.root.set("e57LibraryVersion", libe57.StringNode(imf, libe57.E57_LIBRARY_ID))
-        self.root.set("coordinateMetadata", libe57.StringNode(imf, ""))
+        # self.root.set("coordinateMetadata", libe57.StringNode(imf, ""))
         creation_date_time = libe57.StructureNode(imf)
         creation_date_time.set("dateTimeValue", libe57.FloatNode(imf, 0.0))
         creation_date_time.set("isAtomicClockReferenced", libe57.IntegerNode(imf, 0))
